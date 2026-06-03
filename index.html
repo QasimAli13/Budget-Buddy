@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-space"></div>
+
+        <h1 class="title">Budget Buddy</h1>
+        <div class="nav-bar">
+            <button class="nav-btn active" onclick="location.href='index.html'">
+                Home
+            </button>
+
+            <button class="nav-btn" onclick="location.href='summary.html'">
+                Summary
+            </button>
+
+            <button class="nav-btn" onclick="location.href='settings.html'">
+                Settings
+            </button>
+        </div>
+
+    </header>
+    <div class="des">
+        <h2>Welcome to Budget Buddy!</h2>
+        <p>Track your income and expenses with ease.</p>
+    </div>
+    <div class="summary">
+        <h2>Summary</h2>
+        <p id="total-income">Total Income: $0</p>
+        <p id="total-expenses">Total Expenses: $0</p>
+        <p id="net-savings">Net Savings: $0</p>
+    </div>
+    <div class="all">
+        <div class="card transactions block">
+            <h2>Recent Transactions</h2>
+            <ul class="transactions-list">
+                <!-- Transactions will be added here by JavaScript -->
+            </ul>
+            <button onclick="location.href='add.html'">
+                Add Transaction
+            </button>
+        </div>
+    </div>
+    <script src="add.js"></script>
+</body>
+
+</html>

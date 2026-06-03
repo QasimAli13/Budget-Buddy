@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - Budget Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left-space"></div>
+
+        <h1 class="title">Budget Buddy</h1>
+        <div class="nav-bar">
+            <button class="nav-btn" onclick="location.href='index.html'">
+                Home
+            </button>
+
+            <button class="nav-btn active" onclick="location.href='summary.html'">
+                Summary
+            </button>
+
+            <button class="nav-btn" onclick="location.href='settings.html'">
+                Settings
+            </button>
+        </div>
+
+    </header>
+    <div class="card">
+        <h2>Expense Breakdown</h2>
+        <canvas id="expense-chart" width="300" height="300"></canvas>
+    </div>
+
+    <div class="card">
+        <h2>Category Breakdown</h2>
+        <div id="categoryBars"></div>
+    </div>
+
+    <script src="add.js"></script>
+</body>
+
+</html>

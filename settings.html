@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Budget Buddy</title>
+    <!-- <link rel="stylesheet" href="settings.css" class="settings"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left-space"></div>
+
+        <h1 class="title">Budget Buddy</h1>
+        <div class="nav-bar">
+            <button class="nav-btn" onclick="location.href='index.html'">
+                Home
+            </button>
+
+            <button class="nav-btn" onclick="location.href='summary.html'">
+                Summary
+            </button>
+
+            <button class="nav-btn active" onclick="location.href='settings.html'">
+                Settings
+            </button>
+        </div>
+
+    </header>
+
+
+    <div class="settings-container">
+        <h2>Budget Settings</h2>
+
+        <div class="budget-group">
+            <div class="budget-row">
+                <label>Food</label>
+                <input type="number" id="food-budget" placeholder="$0.00">
+            </div>
+
+            <div class="budget-row">
+                <label>Transport</label>
+                <input type="number" id="transport-budget" placeholder="$0.00">
+            </div>
+
+            <div class="budget-row">
+                <label>Bills</label>
+                <input type="number" id="bills-budget" placeholder="$0.00">
+            </div>
+
+            <div class="budget-row">
+                <label>Entertainment</label>
+                <input type="number" id="entertainment-budget" placeholder="$0.00">
+            </div>
+
+            <div class="budget-row">
+                <label>Other</label>
+                <input type="number" id="other-budget" placeholder="$0.00">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="save-btn" onclick="saveAllBudgets()">Save All Budgets</button>
+            <button class="reset-btn" onclick="resetBudgets()">Reset All</button>
+        </div>
+    </div>
+    </div>
+    <script src="add.js"></script>
+</body>
+
+</html>
